@@ -6,11 +6,9 @@ import (
 )
 
 func main() {
-
 	exibeIntroducao()
 	exibeMenu()
 	comando := leComando()
-
 	// CRIANDO FLUXO DE VALIDAÇÃO DE ESCOLHA:
 	switch comando {
 	case 1:
@@ -31,19 +29,19 @@ func exibeIntroducao() {
 	nome := "Willian Alves Fonseca"
 	versao := 1.0
 
-	fmt.Println("======| INTRODUÇÃO |======")
+	fmt.Println("=====| INTRODUÇÃO |=====")
 	fmt.Println("Olá Sr.", nome)
 	fmt.Println("Este programa esta na versão: ", versao)
-	fmt.Println("==========================")
+	fmt.Println("========================")
 	fmt.Println()
 }
 
 func exibeMenu() {
-	fmt.Println("=========| MENU |=========")
+	fmt.Println("========| MENU |========")
 	fmt.Println("1 - Iníciando do monitoramento.")
 	fmt.Println("2 - Exibir logs.")
 	fmt.Println("0 - Sair do programa.")
-	fmt.Println("==========================")
+	fmt.Println("========================")
 	fmt.Print("Digite sua opção: ")
 }
 
