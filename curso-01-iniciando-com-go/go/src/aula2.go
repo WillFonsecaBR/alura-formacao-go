@@ -17,4 +17,7 @@ func main() {
 	// Recebendo imput de dados
 	var comando int
 	fmt.Scan(&comando)
+	fmt.Println("O caminho escolhido foi: ", comando)
+	fmt.Println("O endereço da minha variavel comando é: ", &comando)
+	// &comando Mostra o caminho de alocação na memoria
 }
